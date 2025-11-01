@@ -1,0 +1,55 @@
+bookit-frontend/
+│
+├── public/
+│   └── assets/                     # images/icons from Unsplash/Pexels
+│
+├── src/
+│   ├── api/
+│   │   ├── axiosInstance.ts        # base URL setup for backend
+│   │   ├── experienceApi.ts        # GET /experiences, GET /experiences/:id
+│   │   ├── bookingApi.ts           # POST /bookings
+│   │   └── promoApi.ts             # POST /promo/validate
+│
+│   ├── app/
+│   │   ├── store.ts                # Redux store config
+│   │   └── hooks.ts                # Typed useAppDispatch/useAppSelector
+│
+│   ├── features/
+│   │   ├── experience/
+│   │   │   ├── experienceSlice.ts
+│   │   │   └── types.ts
+│   │   ├── booking/
+│   │   │   ├── bookingSlice.ts
+│   │   │   └── types.ts
+│   │   └── promo/
+│   │       ├── promoSlice.ts
+│   │       └── types.ts
+│
+│   ├── components/
+│   │   ├── ui/                     # Button, Input, Loader, Card, Tag
+│   │   ├── layout/                 # Navbar, Footer
+│   │   └── common/                 # Hero, ExperienceList, ExperienceCard
+│
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── Details.tsx
+│   │   ├── Checkout.tsx
+│   │   └── Result.tsx
+│
+│   ├── routes/
+│   │   └── AppRouter.tsx           # define BrowserRouter routes
+│
+│   ├── utils/
+│   │   ├── formatDate.ts
+│   │   └── priceHelper.ts
+│
+│   ├── styles/
+│   │   └── index.css               # Tailwind import + custom classes
+│
+│   ├── App.tsx
+│   └── index.tsx
+│
+├── tailwind.config.js
+├── tsconfig.json
+├── package.json
+└── README.md

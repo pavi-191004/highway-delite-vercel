@@ -1,0 +1,35 @@
+bookit-backend/
+│
+├── src/
+│   ├── config/
+│   │   └── db.ts                   # MongoDB connection setup
+│   │
+│   ├── models/
+│   │   ├── Experience.ts
+│   │   ├── Booking.ts
+│   │   └── Promo.ts
+│   │
+│   ├── controllers/
+│   │   ├── experienceController.ts
+│   │   ├── bookingController.ts
+│   │   └── promoController.ts
+│   │
+│   ├── routes/
+│   │   ├── experienceRoutes.ts
+│   │   ├── bookingRoutes.ts
+│   │   └── promoRoutes.ts
+│   │
+│   ├── middleware/
+│   │   └── errorHandler.ts
+│   │
+│   ├── utils/
+│   │   └── validatePromo.ts
+│   │
+│   ├── data/
+│   │   └── seedData.js             # (optional) sample experiences
+│   │
+│   └── server.ts
+│
+├── .env
+├── package.json
+└── README.md
